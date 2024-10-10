@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Centrando el logo */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contenedor del video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden; /* Para evitar que el video se desborde */
+  }
+  
+  /* Capa oscura superpuesta */
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura con transparencia */
+    pointer-events: none; /* Permite hacer clic a través de esta capa */
+    z-index: 2; /* Capa oscura encima del video */
+  }
+  
+  /* Video que se ajusta al contenedor */
+  .video {
+    width: 100%;
+    object-fit: cover; /* Asegura que el video cubra el área */
+    position: relative;
+    z-index: 1; /* Video debajo de la capa oscura */
+  }
+  
+  /* Estilos para las cajas de texto sobre el video */
+  .overlay-text, .overlay-text2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 3; /* Texto encima de todo */
+    text-align: center;
+  }
+  
+  .overlay-text {
+    top: 40%;
+    font-size: 2rem;
+  }
+  
+  .overlay-text2 {
+    top: 55%;
+    font-size: 1.5rem;
+  }
+  
+/* Control del botón de mute/unmute */
+.mute-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.section-card{
+    background-color: #6cc2bb;
+}
+.section-client{
+    background-color: #262a59;
+    color: #6cc2bb;
+}
+.section-client h1{
+    color: #6cc2bb;
+}
+/* Contenedor para centrar y ajustar la imagen */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -50px; /* Elevar la imagen sobre la caja */
+  z-index: 1;
+}
+
+/* Ajuste para la tarjeta */
+.card {
+  position: relative;
+  padding-top: 0px; /* Para que el contenido no se solape con la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  border-radius: 10px;
+  background-color: #262a5900;
+}
+.card:hover {
+    position: relative;
+    padding-top: 0px; /* Para que el contenido no se solape con la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+.card-body {
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+.title{
+    color: #262a59;
+    font-weight: bolder;
+}
+
